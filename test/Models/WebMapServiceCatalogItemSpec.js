@@ -118,7 +118,7 @@ describe('WebMapServiceCatalogItemViewModel', function() {
 
         expect(wmsItem.name).toBe('Unnamed Item');
         expect(wmsItem.description).toBe('');
-        expect(wmsItem.rectangle).toEqual(Rectangle.MAX_VALUE);
+        expect(wmsItem.rectangle).toBeUndefined();
         expect(wmsItem.legendUrl.indexOf('?')).toBe(0);
         expect(wmsItem.dataUrlType).toBe('wfs');
         expect(wmsItem.dataUrl.indexOf('?')).toBe(0);
